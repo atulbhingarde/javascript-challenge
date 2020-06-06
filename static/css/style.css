@@ -78,7 +78,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* Make buttons more visible */
   .btn{
-    background-color: rgba(97, 141, 27, 0.322); 
+    background-color: rgba(131, 138, 118, 0.322); 
   }
 
   @keyframes bounce {
@@ -167,7 +167,7 @@ ul #filters{
     display: block;
     width: 100%;
     padding: 8px;
-    color: #8e979f;
+    color: #779cbb;
     outline: none;
   }
   
@@ -251,7 +251,7 @@ ul #filters{
 
   
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-   background-color: #1F2D09; 
+   background-color: rgb(132, 154, 96); 
 }
   
   @media (max-width: 500px) {
