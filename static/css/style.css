@@ -173,6 +173,7 @@ ul #filters{
   
   #table-area th {
     text-align: center;
+    background-color: #779cbb;
   }
   
   #table-area th:first-child,
@@ -240,7 +241,7 @@ ul #filters{
 
   table{
     border-style: groove; 
-    border-color: #618D1B; 
+    border-color: rgb(224, 230, 215); 
   }
   /* media queries which will only be activated at specific screen sizes */
   @media (max-width: 800px) {
@@ -251,9 +252,19 @@ ul #filters{
 
   
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-   background-color: rgb(132, 154, 96); 
+   background-color: rgba(177, 184, 165, 1.6); 
+   color: #363b3e;
 }
-  
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #3d3333;
+  color: white;
+}
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+  background-color: rgb(54, 61, 66);
+  color: black;
+}
   @media (max-width: 500px) {
     #table-area thead {
       display: none;
