@@ -30,16 +30,17 @@ button.on("click", () => {
   var inputDate = inputField1.property("value").trim();
   // var inputDate = $("#datepicker1").datepicker('getDate');
   // yy = $.datepicker.formatDate('dd/mm/yy', inputField1);
-  console.log(inputDate);
+  // console.log("Input date is "+ inputDate);
   var inputCity = inputField2.property("value").toLowerCase().trim();
   // Filter by field matching input value
   // var filterDate = data.filter(data => data.datetime === inputDate);
   var filterDate = data.filter( data =>  Date.parse(data.datetime) === Date.parse(inputDate));
   // console.log(filterDate);
-  var filterCity = data.filter(data => data.city === inputCity);
-  // console.log(filterCity);
+  var filterCity = data.filter(data => data.city === inputCity );
+  // console.log(inputField2);
   var filterData = data.filter(data => ( Date.parse(data.datetime) === Date.parse(inputDate) ) && ( data.city === inputCity ) );
   // console.log(filterData);
+  // console.log("input city is "+ inputCity);
 
   // Add filtered sighting to table
   tbody.html("");
@@ -68,4 +69,5 @@ resetbtn.on("click", () => {
   $.datepicker.formatDate('dd-mm-yy', inputField1);
 
   // console.log(inputField1);
+  // console.log(inputField2);
 });
